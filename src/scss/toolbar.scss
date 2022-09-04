@@ -1,0 +1,29 @@
+@import "vars";
+@import "mixins";
+
+.excel__toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header-height;
+  height: $toolbar-height;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 8px 10px 8px;
+  display: flex;
+  align-items: center;
+
+  &-btn {
+    @include button($color-select);
+    width: 24px;
+    height: 24px;
+  }
+
+  &-btn + &-btn {
+    margin-left: 10px;
+  }
+
+  .material-icons {
+    display: block;
+  }
+}
