@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./scss/index.scss" rel="stylesheet">
+  <title>Pure JS Excel</title>
+</head>
+
+<body>
+  <div id="app">
+    <section class="dashboard">
+      <div class="dashboard__header">
+        <h1 class="dashboard__header-title">Excel Dashboard</h1>
+      </div>
+      <div class="dashboard__new">
+        <div class="dashboard__new-view">
+          <a class="dashboard__new-create" href="#">
+            New <br> Table
+          </a>
+        </div>
+      </div>
+
+      <div class="dashboard__table">
+        <div class="dashboard__table-header">
+          <span class="dashboard__table-name">Name</span>
+          <span class="dashboard__table-date">Date</span>
+        </div>
+
+        <ul class="dashboard__list">
+          <li class="dashboard__record">
+            <a class="dashboard__record-link" href="#">Table #1</a>
+            <strong class="dashboard__record-date">12.06.2022</strong>
+          </li>
+
+          <li class="dashboard__record">
+            <a class="dashboard__record-link" href="#">Table #2</a>
+            <strong class="dashboard__record-date">12.06.2022</strong>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+</body>
+
+</html>

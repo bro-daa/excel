@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./scss/index.scss" rel="stylesheet">
+  <title>Pure JS Excel</title>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <div class="excel">
+
+      <div class="excel__header">
+        <input class="excel__header-input" type="text" value="New table">
+        <div class="excel__header-buttons">
+          <button class="excel__header-btn">
+            <i class="material-icons md-24">
+              delete
+            </i>
+          </button>
+          <button class="excel__header-btn">
+            <i class="material-icons md-24">
+              exit_to_app
+            </i>
+          </button>
+        </div>
+      </div>
+
+      <div class="excel__toolbar">
+        <button class="excel__toolbar-btn">
+          <i class="material-icons">
+            format_bold
+          </i>
+        </button>
+        <button class="excel__toolbar-btn">
+          <i class="material-icons">
+            format_italic
+          </i>
+        </button>
+        <button class="excel__toolbar-btn">
+          <i class="material-icons md-24">
+            format_underlined
+          </i>
+        </button>
+        <button class="excel__toolbar-btn">
+          <i class="material-icons md-24">
+            format_align_left
+          </i>
+        </button>
+        <button class="excel__toolbar-btn">
+          <i class="material-icons md-24">
+            format_align_right
+          </i>
+        </button>
+        <button class="excel__toolbar-btn">
+          <i class="material-icons md-24">
+            format_align_center
+          </i>
+        </button>
+      </div>
+
+      <div class="excel__formula">
+        <div class="excel__formula-info">fx</div>
+        <div class="excel__formula-input" contenteditable spellcheck="false"></div>
+      </div>
+
+      <div class="excel__table">
+        <div class="excel__row">
+          <div class="excel__row-info">
+
+          </div>
+
+          <div class="excel__row-data">
+            <div class="excel__row-column">
+              A
+            </div>
+            <div class="excel__row-column">
+              B
+            </div>
+            <div class="excel__row-column">
+              C
+            </div>
+          </div>
+        </div>
+
+        <div class="excel__row">
+          <div class="excel__row-info">
+            1
+          </div>
+
+          <div class="excel__row-data">
+            <div class="excel__row-cell" contenteditable spellcheck="false">
+              1
+            </div>
+            <div class="excel__row-cell" contenteditable spellcheck="false">
+              2
+            </div>
+            <div class="excel__row-cell" contenteditable spellcheck="false">
+              3
+            </div>
+          </div>
+        </div>
+        <div class="excel__row">
+          <div class="excel__row-info">
+            1
+          </div>
+
+          <div class="excel__row-data">
+            <div class="excel__row-cell selected">
+              1
+            </div>
+            <div class="excel__row-cell">
+              2
+            </div>
+            <div class="excel__row-cell">
+              3
+            </div>
+          </div>
+        </div>
+        <div class="excel__row">
+          <div class="excel__row-info">
+            1
+          </div>
+
+          <div class="excel__row-data">
+            <div class="excel__row-cell ">
+              1
+            </div>
+            <div class="excel__row-cell">
+              2
+            </div>
+            <div class="excel__row-cell">
+              3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
